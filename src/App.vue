@@ -16,8 +16,8 @@
           <div class="date">Monday 20 January 2020</div>
         </div>
         <div class="weather-box">
-          <div class="temp">9°c</div>
-          <div class="weather">Rain</div>
+          <div class="temp">{{Math.round(weather.main.temp)}}°c</div>
+          <div class="weather">{{weather.weather[0].main}}</div>
         </div>
       </div>
     </main>
@@ -113,6 +113,7 @@ main {
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
   background-color: rgba(255, 255, 255, 0.75);
   border-radius: 16px 0;
+  outline: none;
 }
 
 .location-box .location {
